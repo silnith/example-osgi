@@ -9,6 +9,9 @@
 	<packaging>pom</packaging>
 	<name>OSGi Example</name>
 	<description>Demo of stuff.</description>
+	<modules>
+		<module>thing-api</module>
+	</modules>
 	<properties>
 		<maven.compiler.release>8</maven.compiler.release>
 		<maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
@@ -297,4 +300,5 @@
 			</plugin>
 		</plugins>
 	</reporting>
+	
 </project>
