@@ -12,6 +12,7 @@
 	<modules>
 		<module>thing-api</module>
 		<module>thing-impl-a</module>
+        <module>thing-impl-blueprint</module>
 		<module>something-service</module>
 	</modules>
 	<properties>
@@ -78,6 +79,11 @@
 				<groupId>org.osgi</groupId>
 				<artifactId>org.osgi.service.component.annotations</artifactId>
 				<version>1.4.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.osgi</groupId>
+				<artifactId>org.osgi.service.blueprint</artifactId>
+				<version>1.0.2</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
