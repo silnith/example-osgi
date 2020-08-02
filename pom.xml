@@ -11,6 +11,7 @@
 	<description>Demo of stuff.</description>
 	<modules>
 		<module>thing-api</module>
+		<module>thing-impl-a</module>
 	</modules>
 	<properties>
 		<maven.compiler.release>8</maven.compiler.release>
@@ -31,6 +32,18 @@
 		<tag>HEAD</tag>
 	</scm>
 	<dependencyManagement>
+	<dependencies>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>osgi.annotation</artifactId>
+			<version>7.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>osgi.enterprise</artifactId>
+			<version>7.0.0</version>
+		</dependency>
+	</dependencies>
 	</dependencyManagement>
 	<dependencies>
 	</dependencies>

@@ -8,13 +8,21 @@
 		<artifactId>example-osgi</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>thing-api</artifactId>
-	<name>Thing API</name>
-	<description>Public API for a thing.</description>
+	<artifactId>thing-impl-a</artifactId>
+	<name>Thing Implementation Alpha</name>
+	<description>An implementation of the thing service.</description>
 	<dependencies>
+        <dependency>
+            <groupId>org.silnith</groupId>
+            <artifactId>thing-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 		<dependency>
 			<groupId>org.osgi</groupId>
-			<artifactId>osgi.annotation</artifactId>
+			<artifactId>
+				org.osgi.service.component.annotations
+			</artifactId>
+			<version>1.4.0</version>
 		</dependency>
 	</dependencies>
 </project>
