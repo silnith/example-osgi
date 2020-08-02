@@ -15,14 +15,12 @@
         <dependency>
             <groupId>org.silnith</groupId>
             <artifactId>thing-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 		<dependency>
 			<groupId>org.osgi</groupId>
 			<artifactId>
 				org.osgi.service.component.annotations
 			</artifactId>
-			<version>1.4.0</version>
 		</dependency>
 	</dependencies>
 </project>
