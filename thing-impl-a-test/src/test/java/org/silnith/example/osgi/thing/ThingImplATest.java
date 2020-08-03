@@ -24,8 +24,11 @@ public class ThingImplATest {
     public Option[] configuration() {
         return options(
                 junitBundles(),
-                mavenBundle("org.silnith", "thing-api", "0.0.1-SNAPSHOT"),
-                mavenBundle("org.silnith", "thing-impl-a", "0.0.1-SNAPSHOT"),
+                mavenBundle("org.apache.felix", "org.apache.felix.scr"),
+                mavenBundle("org.osgi", "org.osgi.util.function"),
+                mavenBundle("org.osgi", "org.osgi.util.promise"),
+                mavenBundle("org.silnith", "thing-api"),
+                mavenBundle("org.silnith", "thing-impl-a"),
                 cleanCaches(true));
     }
     
