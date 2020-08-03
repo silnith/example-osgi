@@ -26,8 +26,7 @@ public class ThingImplATest {
                 junitBundles(),
                 mavenBundle("org.silnith", "thing-api", "0.0.1-SNAPSHOT"),
                 mavenBundle("org.silnith", "thing-impl-a", "0.0.1-SNAPSHOT"),
-                cleanCaches(true)
-                );
+                cleanCaches(true));
     }
     
     @Test
@@ -39,7 +38,7 @@ public class ThingImplATest {
     public void testThingIsImplementationA() {
         final Object aThing = thing.doThing("input");
         
-        assertEquals("Thing of type B", aThing);
+        assertEquals("Thing of type A", aThing);
     }
 
 }
