@@ -7,7 +7,7 @@ public class ThingImpl implements Thing {
 
     @Override
     public Object doThing(final String input) {
-        return null;
+        return "Thing using Blueprint";
     }
 
 }
