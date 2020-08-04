@@ -1,4 +1,4 @@
-package org.silnith.example.osgi.thing;
+package org.silnith.example.osgi.thing.impl.a;
 
 import static org.junit.Assert.*;
 import static org.ops4j.pax.exam.CoreOptions.*;
@@ -27,21 +27,24 @@ public class ResolutionTest {
     public Option[] configuration() {
         return options(
                 junitBundles(),
+                mavenBundle("org.apache.felix", "org.apache.felix.scr"),
+                mavenBundle("org.osgi", "org.osgi.util.function"),
+                mavenBundle("org.osgi", "org.osgi.util.promise"),
                 mavenBundle("org.silnith", "thing-api"),
+                mavenBundle("org.silnith", "thing-impl-a"),
                 cleanCaches(true));
     }
     
     /**
-     * Tests that the {@link org.silnith.example.osgi.thing.Thing} interface
-     * resolves properly inside of an OSGi container.
+     * Tests that the {@link org.silnith.example.osgi.thing.impl.a.ThingImpl} class
+     * does <em>not</em> resolve inside of an OSGi container.
      * 
-     * @throws ClassNotFoundException if the test failed
+     * @throws ClassNotFoundException if the test passed
      */
-    @Test
+    @Test(expected = ClassNotFoundException.class)
     public void testExists() throws ClassNotFoundException {
-        final Class<?> clazz = Class.forName(Constants.thingClassName);
-        
-        assertNotNull(clazz);
+        @SuppressWarnings("unused")
+        final Class<?> clazz = Class.forName(Constants.thingImplClassName);
     }
     
 }
