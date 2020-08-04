@@ -7,20 +7,19 @@
 		<groupId>org.silnith</groupId>
 		<artifactId>example-osgi</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>..</relativePath>
 	</parent>
 	<artifactId>thing-impl-a</artifactId>
 	<name>Thing Implementation Alpha</name>
 	<description>An implementation of the thing service.</description>
 	<dependencies>
-        <dependency>
-            <groupId>org.silnith</groupId>
-            <artifactId>thing-api</artifactId>
-        </dependency>
+		<dependency>
+			<groupId>org.silnith</groupId>
+			<artifactId>thing-api</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.osgi</groupId>
-			<artifactId>
-				org.osgi.service.component.annotations
-			</artifactId>
+			<artifactId>org.osgi.service.component.annotations</artifactId>
 		</dependency>
 	</dependencies>
 </project>
