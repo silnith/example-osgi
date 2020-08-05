@@ -5,6 +5,15 @@ An example of using OSGi to do neat stuff.
 This contains several example OSGi bundles built using Maven and tested in
 Apache Felix.
 
+## Building
+
+```sh
+mvn clean install verify site
+```
+
+For your normal debug cycle, you can omit `site`.  Only `install` and `verify`
+are required, in that order.
+
 ## Techniques
 
 * Building in Maven.
