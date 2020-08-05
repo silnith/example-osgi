@@ -19,7 +19,11 @@
 		</dependency>
 		<dependency>
 			<groupId>org.osgi</groupId>
-			<artifactId>osgi.annotation</artifactId>
+			<artifactId>org.osgi.annotation.bundle</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.annotation.versioning</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.osgi</groupId>
