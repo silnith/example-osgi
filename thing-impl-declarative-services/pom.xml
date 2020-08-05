@@ -23,7 +23,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.osgi</groupId>
-			<artifactId>osgi.enterprise</artifactId>
+			<artifactId>org.osgi.service.log</artifactId>
 		</dependency>
 	</dependencies>
 </project>
