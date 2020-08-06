@@ -7,7 +7,7 @@ package org.silnith.example.osgi.thing.impl.declarative;
 public class Constants {
     
     /**
-     * The name of the class {@link ThingImpl} as a string.
+     * The name of the class {@link org.silnith.example.osgi.thing.impl.declarative.ThingImpl} as a string.
      */
     public static final String thingImplClassName = "org.silnith.example.osgi.thing.impl.declarative.ThingImpl";
 

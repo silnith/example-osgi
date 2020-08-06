@@ -10,7 +10,7 @@
 		<relativePath>..</relativePath>
 	</parent>
 	<artifactId>thing-impl-blueprint</artifactId>
-	<name>Thing Implementation with Blueprint</name>
+	<name>Blueprint Implementation of Thing API</name>
 	<description>An implementation of Thing API using Blueprint.</description>
 	<dependencies>
 		<dependency>
@@ -28,6 +28,10 @@
 		<dependency>
 			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.blueprint</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.service.log</artifactId>
 		</dependency>
 	</dependencies>
 </project>

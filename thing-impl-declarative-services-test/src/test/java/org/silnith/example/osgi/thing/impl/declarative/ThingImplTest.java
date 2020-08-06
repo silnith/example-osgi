@@ -16,7 +16,7 @@ import org.silnith.example.osgi.thing.Thing;
 
 @RunWith(PaxExam.class)
 @ExamReactorStrategy(PerMethod.class)
-public class ThingImplATest {
+public class ThingImplTest {
     
     @Inject
     public Thing thing;
@@ -42,7 +42,7 @@ public class ThingImplATest {
     }
     
     @Test
-    public void testThingIsImplementationA() {
+    public void testThingIsDeclarativeServicesImplementation() {
         final Object aThing = thing.doThing("input");
         
         assertEquals("Declarative Services Thing", aThing);

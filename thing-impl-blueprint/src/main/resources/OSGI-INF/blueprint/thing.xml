@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bp:blueprint
+	xmlns:bp="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0 https://docs.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd ">
+	<bp:service>
+		<bp:interfaces>
+			<bp:value>org.silnith.example.osgi.thing.Thing</bp:value>
+		</bp:interfaces>
+		<bp:ref component-id="thingImpl" />
+	</bp:service>
+	<bp:bean id="thingImpl" class="org.silnith.example.osgi.thing.impl.blueprint.ThingImpl">
+		<bp:argument index="0" type="org.osgi.service.log.Logger">
+			<bp:bean factory-ref="loggerFactory" factory-method="getLogger">
+				<bp:argument index="0" type="java.lang.Class">
+					<bp:value>org.silnith.example.osgi.thing.impl.blueprint.ThingImpl</bp:value>
+				</bp:argument>
+				<bp:argument index="1" type="java.lang.Class">
+					<bp:value>org.osgi.service.log.Logger</bp:value>
+				</bp:argument>
+			</bp:bean>
+		</bp:argument>
+	</bp:bean>
+	<bp:reference id="loggerFactory"
+		interface="org.osgi.service.log.LoggerFactory"
+		availability="mandatory" />
+</bp:blueprint>

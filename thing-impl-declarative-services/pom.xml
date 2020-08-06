@@ -10,7 +10,7 @@
 		<relativePath>..</relativePath>
 	</parent>
 	<artifactId>thing-impl-declarative-services</artifactId>
-	<name>Declarative Services Implementation of Thing API.</name>
+	<name>Declarative Services Implementation of Thing API</name>
 	<description>An implementation of Thing API using Declarative Services.</description>
 	<dependencies>
 		<dependency>
