@@ -14,6 +14,7 @@
 		<module>thing-api-test</module>
 		<module>thing-impl-blueprint</module>
 		<module>thing-impl-blueprint-test</module>
+		<module>thing-impl-cdi</module>
 		<module>thing-impl-declarative-services</module>
 		<module>thing-impl-declarative-services-test</module>
 		<module>something-service</module>
@@ -48,6 +49,11 @@
 				<artifactId>thing-impl-blueprint</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
+            <dependency>
+                <groupId>org.silnith</groupId>
+                <artifactId>thing-impl-cdi</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
 			<dependency>
 				<groupId>org.silnith</groupId>
 				<artifactId>thing-impl-declarative-services</artifactId>
@@ -205,6 +211,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.osgi</groupId>
+				<artifactId>org.osgi.service.cdi</artifactId>
+				<version>1.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.osgi</groupId>
 				<artifactId>org.osgi.service.cm</artifactId>
 				<version>1.6.0</version>
 			</dependency>
@@ -239,9 +250,10 @@
 				<version>1.0.1</version>
 			</dependency>
 
-			
-			
-			
+
+
+
+
 			
 		</dependencies>
 	</dependencyManagement>
